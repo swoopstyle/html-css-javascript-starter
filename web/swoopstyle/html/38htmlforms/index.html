@@ -14,8 +14,6 @@
 
 <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
 
-
-
 <h2>Please select your gender</h2>
 
 <form>
@@ -40,5 +38,14 @@
   <input type="submit" value="Submit">
 </form> 
 
+<h1>Would you like to sign up to our newsletter? Please insert your e-mail</h1>
+
+<form action="/action_page.php" novalidate>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p><strong>Note:</strong> We will send promotional e-mail with our latest offers, please check the spam folder</p>
 </body>
 </html>
