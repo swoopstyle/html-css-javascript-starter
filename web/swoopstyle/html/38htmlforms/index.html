@@ -2,19 +2,16 @@
 <html>
 <body>
 
-<h2>HTML Forms</h2>
+<h2>Please fill in the form</h2>
 
 <form action="/action_page.php">
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" value="John"><br>
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
 </form> 
 
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-
-<h2>Please select your gender</h2>
+<h2>1. Please select your gender</h2>
 
 <form>
   <input type="radio" id="male" name="gender" value="male">
@@ -25,7 +22,28 @@
   <label for="other">Other</label>
 </form> 
 
-<h2>How did you get to the interview today?</h2>
+<h2>2. Do you have the right to work in the UK</h2>
+<form action="/action_page.php">
+  <label for="work">Please choose one of the following</label>
+  <select id="work" name="work">
+    <option value="birtishnational">British citizen</option>
+    <option value="indefiniteleavetoremain">Indefinite Leave to Remain</option>
+    <option value="eucitizen">European Union citizen</option>
+    <option value="international">International</option>
+</form>
+<br>
+<br>
+
+<h2>3. Would you like to sign up to our newsletter? Please insert your e-mail</h2>
+
+<form action="/action_page.php" novalidate>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+
+<h2>4. How did you get to the interview today?</h2>
 <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
 
 <form action="/action_page.php">
@@ -35,16 +53,7 @@
   <label for="vehicle2"> I have a car</label><br>
   <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
   <label for="vehicle3"> I have a helicopter</label><br><br>
-  <input type="submit" value="Submit">
 </form> 
-
-<h1>Would you like to sign up to our newsletter? Please insert your e-mail</h1>
-
-<form action="/action_page.php" novalidate>
-  <label for="email">Enter your email:</label>
-  <input type="email" id="email" name="email" required><br><br>
-  <input type="submit" value="Submit">
-</form>
 
 <p><strong>Note:</strong> We will send promotional e-mail with our latest offers, please check the spam folder</p>
 </body>
