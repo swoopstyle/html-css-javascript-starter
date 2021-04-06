@@ -3,16 +3,13 @@
 <body>
 
 <h2>Please read the following questions and fill in the form</h2>
-
 <form action="/action_page.php">
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" value="John"><br>
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname" value="Doe"><br><br>
 </form> 
-
-<h2>1. Please select your gender</h2>
-
+<h3>1. Please select your gender</h3>
 <form>
   <input type="radio" id="male" name="gender" value="male">
   <label for="male">Male</label><br>
@@ -21,9 +18,8 @@
   <input type="radio" id="other" name="gender" value="other">
   <label for="other">Other</label>
 </form> 
-
-<h2>2. Do you have the right to work in the UK</h2>
-<form action="/action_page.php">
+<h3>2. Do you have the right to work in the UK</h3>
+<form>
   <label for="work">Please choose one of the following</label>
   <select id="work" name="work">
     <option value="birtishnational">British citizen</option>
@@ -33,7 +29,6 @@
 </form>
 <br>
 <br>
-
 <h3>3. How did you get to the interview today?</h3>
 <form>
   <input type="radio" id="car" name="travel" value="car">
@@ -44,16 +39,12 @@
   <label for="other">By bus</label>
 </form> 
 
-<h2>4. Would you like to sign up to our newsletter? Please insert your e-mail</h2>
-
-<p>The novalidate attribute specifies that the form data should not be validated when submitted.</p>
-
+<h3>4. Would you like to sign up to our newsletter? Please insert your e-mail</h3>
 <form action="/action_page.php" novalidate>
   <label for="email">Enter your email:</label>
   <input type="email" id="email" name="email" required><br><br>
   <input type="submit" value="Submit">
 </form>
-
 
 <p><strong>Note:</strong> We will send promotional e-mail with our latest offers, please check the spam folder</p>
 </body>
